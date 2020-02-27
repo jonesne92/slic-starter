@@ -69,7 +69,6 @@ class Checklist extends Component {
     updatedTitle: ''
   }
 
-  // Test comment
   handlePanelExpansion = () => {
     this.setState({ isPanelExpanded: !this.state.isPanelExpanded })
   }
