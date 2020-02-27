@@ -4,7 +4,7 @@ import { CfnApplication } from '@aws-cdk/aws-sam'
 export default class PipelineDashboard extends cdk.Construct {
   constructor(scope: cdk.Construct, id: string) {
     super(scope, id)
-    new CfnApplication(scope, `${id}App`, {
+    console.log(new CfnApplication(scope, `${id}App`, {
       location: {
         applicationId:
           'arn:aws:serverlessrepo:us-east-1:923120264911:applications/pipeline-dashboard',
@@ -13,6 +13,6 @@ export default class PipelineDashboard extends cdk.Construct {
       parameters: {
         PipelinePattern: '*'
       }
-    })
+    }))
   }
 }
